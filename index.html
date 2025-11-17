@@ -1,0 +1,124 @@
+<!--
+Ricardo Neves — Mini landing page template for GitHub Pages
+How to use:
+1) Replace placeholders (YOUR_SPOTIFY_EMBED, YOUR_YOUTUBE_EMBED, LINKTREE_URL, GOOGLE_FORM_URL, PHOTO_URL) with your real links.
+2) Save this file as index.html in a repo named <your-username>.github.io and push to GitHub.
+3) Optional: tweak copy, fonts and images. Keep it simple and honest.
+
+Designed to be minimal, mobile-first, and focused on music + authenticity.
+--><!doctype html>
+
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ricardo Neves — Música & Conexão</title>
+  <meta name="description" content="Ricardo Neves — música, verdade e convites genuínos. Se sentires algo, vem falar comigo.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#8bd3b7;--glass: rgba(255,255,255,0.04);--radius:18px}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071022 0%, #0b1730 100%);color:#e6eef6}
+    .wrap{max-width:920px;margin:40px auto;padding:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;flex:0 0 96px;overflow:hidden;background:var(--glass);display:flex;align-items:center;justify-content:center}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .meta{display:flex;gap:10px;margin-top:14px}
+    .pill{padding:6px 10px;background:rgba(255,255,255,0.02);border-radius:12px;font-size:13px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:22px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.avatar{display:none}}
+    .section{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));padding:18px;border-radius:12px}
+    .music iframe{width:100%;height:120px;border-radius:8px;border:0}
+    .about h2,.seek h2{margin:0 0 8px}
+    .about p{line-height:1.5;color:#cfe7f0}
+    .cta{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;color:#062426;background:var(--accent)}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    .small{font-size:13px;color:var(--muted)}
+    .linklist{display:flex;flex-direction:column;gap:8px}
+    .linklist a{color:#cdeedf;text-decoration:none;padding:8px;border-radius:10px;background:rgba(255,255,255,0.01)}
+    .quote{font-style:italic;color:#bfeadf;padding:12px;border-left:3px solid rgba(139,211,183,0.18);border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="avatar">
+          <!-- Replace PHOTO_URL with your chosen image or keep empty for a minimalist look -->
+          <img src="PHOTO_URL" alt="Ricardo Neves">
+        </div>
+        <div>
+          <h1>Ricardo Neves — música & presença</h1>
+          <p class="lead">A música é a minha forma de falar ao coração. Procuro conexão verdadeira — calma, ternura e honestidade.</p>
+          <div class="meta">
+            <span class="pill">34 anos</span>
+            <span class="pill">Portugal</span>
+            <span class="pill">Cantar · Composição</span>
+          </div>
+        </div>
+      </header><div class="grid">
+    <main>
+      <section class="section music">
+        <h2>Ouve uma canção</h2>
+        <p class="small">Se a música tocar em ti, talvez estejamos a começar algo verdadeiro.</p>
+        <!-- Spotify embed placeholder: replace YOUR_SPOTIFY_EMBED with the spotify embed iframe src or a YouTube embed -->
+        <div style="margin-top:10px">
+          <iframe src="YOUR_SPOTIFY_EMBED" allow="encrypted-media" loading="lazy"></iframe>
+        </div>
+        <div style="margin-top:12px" class="muted">Ou visita o meu Linktree para mais faixas e plataformas:</div>
+        <div style="margin-top:8px" class="linklist">
+          <a href="LINKTREE_URL" target="_blank" rel="noopener">linktr.ee/ricardonevesmusic</a>
+          <a href="GOOGLE_FORM_URL" target="_blank" rel="noopener">Diz-me se sentes algo (formulário)</a>
+        </div>
+      </section>
+
+      <section class="section about" style="margin-top:14px">
+        <h2>Quem sou</h2>
+        <p>Sou músico, canto e escrevo. Acredito que o amor surge nas pequenas coisas — no silêncio que fala, no gesto que cuida. Não procuro perfeição; procuro verdade e parceria. </p>
+        <div class="quote" style="margin-top:10px">“Aos 34, aprendi a esperar pelo que vale a pena.”</div>
+      </section>
+
+      <section class="section seek" style="margin-top:14px">
+        <h2>O que procuro</h2>
+        <p>Uma mulher real, sensível, com inteligência emocional. Alguém que valorize ternura, paciência e conversas profundas. Não procuro salvação — procuro parceria.</p>
+        <div style="margin-top:8px" class="small">Se isso ressoa contigo, deixa-me uma mensagem no formulário. Prefiro qualidade a quantidade.</div>
+      </section>
+    </main>
+
+    <aside>
+      <section class="section">
+        <h2>Contacta</h2>
+        <p class="small">Se sentires algo ao ouvir a minha música, diz-me no formulário. Prefiro trocar mensagens autênticas a listas de swipes.</p>
+        <div class="cta">
+          <a class="btn" href="GOOGLE_FORM_URL" target="_blank" rel="noopener">Preenche o formulário</a>
+          <a class="btn" href="LINKTREE_URL" target="_blank" rel="noopener" style="background:transparent;border:1px solid rgba(139,211,183,0.12);color:#9bdac2">Ver Linktree</a>
+        </div>
+      </section>
+
+      <section class="section" style="margin-top:14px">
+        <h2>Interesses & valores</h2>
+        <p class="small">Cantar · Gatos · Família · Conversas profundas · Humor</p>
+        <p class="small" style="margin-top:8px">Causas: Feminismo · Ambiente · Direitos humanos</p>
+      </section>
+
+      <section class="section" style="margin-top:14px">
+        <h2>Notas</h2>
+        <p class="small">Este espaço é um convite aberto — sem pressões, sem algoritmos, só música e verdade. Se quiseres partilhar, serás ouvido com respeito.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="small">Feito com cuidado por Ricardo — <span style="opacity:0.9">se gostares, partilha com quem procura algo real.</span></div>
+  </footer>
+
+</div>
+
+  </div>
+</body>
+</html>
