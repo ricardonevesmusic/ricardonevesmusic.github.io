@@ -1,10 +1,10 @@
 :root {
-  --bg:#0f1724;
-  --card:#0b1220;
-  --muted:#9aa4b2;
-  --accent:#8bd3b7;
-  --glass: rgba(255,255,255,0.04);
-  --radius:18px;
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #8bd3b7;
+  --glass: rgba(255, 255, 255, 0.04);
+  --radius: 18px;
 }
 
 * {
@@ -12,8 +12,8 @@
 }
 
 html, body {
-  height:100%;
-  margin:0;
+  height: 100%;
+  margin: 0;
   font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
   background: linear-gradient(180deg, #071022 0%, #0b1730 100%);
   color: #e6eef6;
