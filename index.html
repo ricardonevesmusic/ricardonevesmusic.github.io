@@ -1,116 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-PT" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no">
-  <title>Ricardo Neves — Música & Conexão</title>
-  <meta name="description" content="Ricardo Neves — música, verdade e convites genuínos. Se sentires algo, vem falar comigo.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 font-size=%2280%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>✨</text></svg>"/>
-  <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Neves</title>
+    <meta name="description" content="Ricardo Neves - músico e cantautor português">
+    <link rel="icon" type="image/png" href="assets/content/logo.png">
+    <link rel="alternate icon" href="assets/content/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <header>
-        <div class="avatar">
-          <!-- Replace PHOTO_URL with your chosen image or keep empty for a minimalist look -->
-          <img src="https://ugc.production.linktr.ee/a435e197-b1f8-405f-85f4-470dd23e5c53_IMG-20250914-141528.jpeg?io=true&size=avatar-v3_0" alt="Ricardo Neves">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">RN</div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#music">MÚSICA</a>
+                <a href="#about">BIO</a>
+                <a href="#contact">CONTACTO</a>
+            </div>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <div>
-          <h1>Ricardo Neves — música & presença</h1>
-          <p class="lead">A música é a minha forma de falar ao coração. Procuro conexão verdadeira — calma, ternura e honestidade.</p>
-          <div class="meta">
-            <span class="pill">♾️ 34 anos, solteiro</span>
-            <span class="pill">🏠 Lousã, Coimbra</span>
-            <span class="pill">🎵 Músico e criativo independente</span>
-          </div>
+    </nav>
+
+    <!-- Scroll indikatörü -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-note">♪</div>
+            <div class="floating-note">♫</div>
+            <div class="floating-note">♬</div>
         </div>
-      </header><div class="grid">
-    <main>
-      <section class="section music">
-        <h2>Ouve uma canção</h2>
-        <p class="small">Se a música tocar em ti, talvez estejamos a começar algo verdadeiro.</p>
-        <!-- Spotify embed placeholder: replace YOUR_SPOTIFY_EMBED with the spotify embed iframe src or a YouTube embed -->
-        <div style="margin-top:10px">
-          <iframe width="100%" height="120" src="https://www.youtube.com/embed/TVMrpO5FDRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="wave-animation"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="artist-info">
+                    <h1>Ricardo Neves</h1>
+                    <p>✨ Músico e cantautor português</p>
+                    <div class="social-links">
+                        <a href="https://open.spotify.com/artist/6WlL4P6eUaXGtFagtXvYX2" target="_blank" class="spotify-link">
+                            <i class="fab fa-spotify"></i>
+                            <span class="tooltip">Spotify</span>
+                        </a>
+                        <a href="https://www.instagram.com/ricardonevesmusic" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="https://soundcloud.com/ricardonevesmusic" target="_blank" class="soundcloud-link">
+                            <i class="fab fa-soundcloud"></i>
+                            <span class="tooltip">SoundCloud</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="latest-track">
+                    <span class="tag">LANÇAMENTO RECENTE</span>
+                    <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/5uufnK4wmRkYxllsQLebnW?utm_source=generator&theme=0" 
+                        width="100%" 
+                        height="152" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
         </div>
-        <div style="margin-top:12px" class="muted">Ou visita o meu Linktree para mais faixas e plataformas:</div>
-        <div style="margin-top:8px" class="linklist">
-          <a href="https://linktr.ee/ricardonevesmusic" target="_blank" rel="noopener">linktr.ee/ricardonevesmusic</a>
-          <a href="https://forms.gle/hGHnrb5bCsesSNZa7" target="_blank" rel="noopener">Diz-me se sentes algo (formulário)</a>
+    </section>
+
+    <!-- Hero section'a 3D katmanlar ekleyelim -->
+    <div class="hero-layers">
+        <div class="layer" data-speed="0.1"></div>
+        <div class="layer" data-speed="0.2"></div>
+        <div class="layer" data-speed="0.3"></div>
+    </div>
+
+    <!-- Müzik dalgası için canvas ekleyelim -->
+    <canvas id="waveCanvas"></canvas>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-note">♪</div>
+            <div class="floating-note">♫</div>
         </div>
-      </section>
-
-      <section class="section about" style="margin-top:14px">
-        <h2>Quem sou</h2>
-        <p>Sou músico, canto e escrevo. Acredito que o amor surge nas pequenas coisas — no silêncio que fala, no gesto que cuida. Não procuro perfeição; procuro verdade e parceria. </p>
-        <div class="quote" style="margin-top:10px">“Aos 34, aprendi a esperar pelo que vale a pena.”</div>
-      </section>
-
-      <section class="section seek" style="margin-top:14px">
-        <h2>O que procuro</h2>
-        <p>Uma mulher real, sensível, com inteligência emocional. Alguém que valorize ternura, paciência e conversas profundas. Não procuro salvação — procuro parceria.</p>
-        <div style="margin-top:8px" class="small">Se isso ressoa contigo, deixa-me uma mensagem no formulário. Prefiro qualidade a quantidade.</div>
-      </section>
-    </main>
-
-    <aside>
-      <section class="section">
-        <h2>Contacta</h2>
-        <p class="small">Se sentires algo ao ouvir a minha música, diz-me no formulário. Prefiro trocar mensagens autênticas a listas de swipes.</p>
-        <div class="cta">
-          <a class="btn" href="https://forms.gle/hGHnrb5bCsesSNZa7" target="_blank" rel="noopener">Preenche o formulário</a>
-          <a class="btn" href="https://linktr.ee/ricardonevesmusic" target="_blank" rel="noopener" style="background:transparent;border:1px solid rgba(139,211,183,0.12);color:#9bdac2">Ver Linktree</a>
+        <div class="wave-animation"></div>
+        <h2>MÚSICA</h2>
+        <div class="music-container">
+            <div class="track-list">
+                <div class="track">
+                    <div class="track-inner">
+                        <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/track/4zQgELJewbK9GteYhasrMs?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="152" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track-inner">
+                        <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/track/7EoBHSqBF46eooiJKFsT2g?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="152" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track-inner">
+                        <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/track/21BXsSyrTKfIPPm9quDmxL?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="152" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section" style="margin-top:14px">
-        <h2>Interesses & valores</h2>
-        <p class="small">🎤 Cantar · 🐱 Gatos · ❤️ Família · 💬 Conversas profundas · 😂 Humor</p>
-        <p class="small" style="margin-top:8px">Causas: Feminismo · Ambiente · Direitos humanos</p>
-      </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-note">♬</div>
+            <div class="floating-note">♪</div>
+        </div>
+        <div class="wave-animation"></div>
+        <h2>BIO</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Ricardo Neves • Vamos juntos nesta viagem?</p>
+            </div>
+        </div>
+    </section>
 
-      <section class="section" style="margin-top:14px">
-        <h2>Notas</h2>
-        <p class="small">Este espaço é um convite aberto — sem pressões, sem algoritmos, só música e verdade. Se quiseres partilhar, serás ouvida com respeito.</p>
-      </section>
-    </aside>
-  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-note">♫</div>
+            <div class="floating-note">♬</div>
+        </div>
+        <div class="wave-animation"></div>
+        <h2>CONTACTO</h2>
+        <div class="contact-content">
+            <a href="mailto:ricardonevesmusic@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                ricardonevesmusic@gmail.com
+            </a>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ricardonevesmusic" target="_blank" class="instagram-link">
+                    <i class="fab fa-instagram"></i>
+                    <span class="tooltip">Instagram</span>
+                </a>
+                <a href="https://open.spotify.com/artist/6WlL4P6eUaXGtFagtXvYX2" target="_blank" class="spotify-link">
+                    <i class="fab fa-spotify"></i>
+                    <span class="tooltip">Spotify</span>
+                </a>
+                <a href="https://soundcloud.com/ricardonevesmusic" target="_blank" class="soundcloud-link">
+                    <i class="fab fa-soundcloud"></i>
+                    <span class="tooltip">SoundCloud</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <div class="small">Feito com cuidado por Ricardo — <span style="opacity:0.9">se gostares, partilha com quem procura algo real.</span></div>
-  </footer>
+    <footer>
+        <p></p>
+    </footer>
 
-</div>
-
-  </div>
+    <script src="assets/js/script.js"></script>
 </body>
-  <!--
-Ricardo Neves — Mini landing page template for GitHub Pages
-How to use:
-1) Replace placeholders (YOUR_SPOTIFY_EMBED, YOUR_YOUTUBE_EMBED, LINKTREE_URL, GOOGLE_FORM_URL, PHOTO_URL) with your real links.
-2) Save this file as index.html in a repo named <your-username>.github.io and push to GitHub.
-3) Optional: tweak copy, fonts and images. Keep it simple and honest.
-
-Designed to be minimal, mobile-first, and focused on music + authenticity.
--->
-
-<!--
-TO-DO:
-- Mudar o foco para a música, blogue/diário pessoal partilhado
-- Partilha de desenhos e livros/frases favoritas
-- Passar o dating para 2º plano/background (com foco sobretudo na amizade), mas mantendo-o (neste caso, uma página nova dedicada exclusivamente a isto) relativamente acessivel para quem o quiser encontrar
--->
-
-<!--
-TO-DO:
-- New section
-- Adicionar galeria de fotos em formato de slides que vão rodando do princípio ao fim
-- Adicionar idades do que procuro: 27-37 anos
--->
-<!--
-ADICIONAR SECÇÃO:
-- Músicas que gosto de ouvir, para ver passar o tempo.
-- Música que gosto de ouvir, para me perder no tempo.
--->
-</html>
+</html> 
