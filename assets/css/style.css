@@ -59,6 +59,7 @@ nav {
 }
 
 .logo {
+    font-family: 'Blanka';
     font-size: 2rem;
     font-weight: 800;
     color: var(--text-primary);
@@ -916,4 +917,17 @@ footer {
         font-size: 1rem;
         padding: 0 1rem;
     }
-} 
+}
+
+/* @font-face {
+  font-family: "Blanka";
+  src: url("../content/Blanka.otf") format('otf');
+} */
+
+@font-face {
+font-family: "Blanka";
+src:
+local("Blanka"),
+url("../content/Blanka.otf") format("opentype") tech(Blanka), 
+url("../content/Blanka.otf") format("opentype");
+}
