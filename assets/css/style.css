@@ -141,6 +141,7 @@ nav {
 }
 
 .artist-info h1 {
+    font-family: 'Blanka';
     font-size: 6rem;
     font-weight: 800;
     letter-spacing: 8px;
