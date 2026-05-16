@@ -1,5 +1,13 @@
 # 🎶 Música com Alma
 
-É uma luz que brilha e brota da enormidade de um coração.
+Canções, emoções e ligações humanas.
 
-*Toca quem tem que tocar: é um grito que não pode esperar.*
+*Toca quem tem que tocar, sem pedir licença para entrar: é um grito que não pode esperar.*
+
+## 🎤 Serviços & Colaboração
+
+- Voz / canto
+- Guitarra
+- Composição
+- Projetos criativos e musicais
+- Colaborações artísticas
