@@ -1,4 +1,4 @@
-# 🎶 Música com Alma
+# 🎶 Ricardo Neves — Canções com Alma
 
 Canções, emoções e ligações humanas.
 
