@@ -1,7 +1,5 @@
 # 🎶 Ricardo Neves — Canções com Alma
 
-<br>
-
 Canções, emoções e ligações humanas.
 
 *Toca quem tem que tocar — sem pedir licença para entrar: é um grito que não pode esperar.*
