@@ -18,6 +18,8 @@
 - 🎹 Projetos criativos e musicais
 - ✨ Colaborações artísticas
 
+<br><td>
+
 ---
 
 ### Artistas Favoritos
