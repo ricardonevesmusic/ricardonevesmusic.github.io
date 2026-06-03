@@ -920,15 +920,9 @@ footer {
     }
 }
 
-/* @font-face {
-  font-family: "Blanka";
-  src: url("../content/Blanka.otf") format('otf');
-} */
-
 @font-face {
 font-family: "Blanka";
 src:
 local("Blanka"),
-url("../content/Blanka.otf") format("opentype") tech(Blanka), 
 url("../content/Blanka.otf") format("opentype");
 }
