@@ -880,10 +880,15 @@ footer {
     .hero-content {
         padding: 1rem;
     }
-
+    
     .latest-track {
-        width: 100%;
-        max-width: none;
+        background: var(--bg-secondary);
+        padding: 2rem;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        transform: translateY(0);
+        transition: transform 0.3s ease;
     }
 
     /* Sosyal medya butonları */
