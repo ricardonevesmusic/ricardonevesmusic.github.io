@@ -161,7 +161,7 @@ nav {
 
 .hero-right {
     flex: 1;
-    max-width: 348px;
+    max-width: 500px;
 }
 
 .latest-track {
@@ -882,7 +882,7 @@ footer {
     }
 
     .latest-track {
-        width: 348px;
+        width: 434px;
         max-width: none;
     }
 
