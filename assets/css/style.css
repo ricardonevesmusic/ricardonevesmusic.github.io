@@ -479,6 +479,23 @@ footer {
     .artist-info h1 {
         font-size: 3rem;
     }
+    
+    .hero-right {
+        width: 100%;
+        max-width: none;
+    }
+
+    .latest-track {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
+    }
+
+    .latest-track iframe {
+        display: block;
+        width: 100%;
+        min-height: 152px;
+    }
 
     .about h2, .contact h2, .music h2 {
         font-size: 2.5rem;
