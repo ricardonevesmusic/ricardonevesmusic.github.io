@@ -460,6 +460,7 @@ footer {
     .hero-content {
         flex-direction: column;
         text-align: center;
+        display: flex;
     }
 
     .hero-right {
