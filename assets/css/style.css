@@ -460,7 +460,6 @@ footer {
     .hero-content {
         flex-direction: column;
         text-align: center;
-        display: flex;
     }
 
     .hero-right {
@@ -879,7 +878,7 @@ footer {
     }
 
     .hero-content {
-        padding: 0 1rem;
+        padding: 1rem;
     }
 
     .latest-track {
