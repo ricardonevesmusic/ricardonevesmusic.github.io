@@ -1,4 +1,9 @@
-/* Tema değişkenleri */
+/* 💻💻💻 VERSÃO — PC 💻💻💻 */
+
+/* ------------------------- */
+
+/* Variáveis do Tema no PC */
+
 :root {
     --bg-primary: #0a0a0a;
     --bg-secondary: #151515;
@@ -19,7 +24,8 @@
     --border: rgba(0, 0, 0, 0.1);
 }
 
-/* Base Styles */
+/* Estilos Padrão */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +44,8 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation */
+/* Navegação */
+
 nav {
     position: fixed;
     width: 100%;
@@ -85,7 +92,8 @@ nav {
     color: var(--accent);
 }
 
-/* Hero Section */
+/* Secção Hero */
+
 .hero {
     min-height: 100vh;
     padding: 100px 2rem 2rem;
@@ -189,7 +197,8 @@ nav {
     margin-bottom: 1rem;
 }
 
-/* Music Section */
+/* Secção Musical */
+
 .music {
     padding: 8rem 2rem;
     position: relative;
@@ -270,7 +279,8 @@ nav {
     }
 }
 
-/* About & Contact Sections */
+/* Secções de Bio & Contacto */
+
 .about, .contact {
     padding: 8rem 2rem;
     position: relative;
@@ -371,6 +381,8 @@ nav {
     left: -25%;
 }
 
+/* 💻💻💻 Links das Redes Sociais do Fundo — PC 💻💻💻 */
+
 .social-links-bottom {
     display: flex;
     gap: 2rem;
@@ -430,7 +442,8 @@ nav {
     left: -25%;
 }
 
-/* Platform-specific styles */
+/* Estilos Específicos por Plataforma */
+
 .spotify-link::before {
     background: #1DB954;
 }
@@ -444,6 +457,7 @@ nav {
 }
 
 /* Tooltip */
+
 .social-links a .tooltip {
     position: absolute;
     bottom: -40px;
@@ -467,7 +481,8 @@ nav {
     bottom: -35px;
 }
 
-/* Hover Animation */
+/* Animação de Hover */
+
 .social-links a:hover {
     animation: none;
 }
@@ -490,7 +505,8 @@ nav {
     box-shadow: 0 10px 20px rgba(136, 28, 52, 0.3);
 }
 
-/* Footer */
+/* Footer // Rodapé */
+
 footer {
     padding: 2rem;
     text-align: center;
@@ -499,7 +515,8 @@ footer {
     color: var(--text-secondary);
 }
 
-/* Theme Toggle */
+/* Alteração de Tema */
+
 .theme-toggle {
     background: none;
     border: none;
@@ -514,7 +531,8 @@ footer {
     transform: rotate(15deg);
 }
 
-/* Responsive Design */
+/* 📳📳📳 Design Móvel — Resp. 📳📳📳 */
+
 @media screen and (max-width: 1024px) {
     .hero-content {
         flex-direction: column;
@@ -574,7 +592,8 @@ footer {
     }
 }
 
-/* Scroll Progress Bar */
+/* Barra de Progresso (Scroll) */
+
 .scroll-progress {
     position: fixed;
     top: 0;
@@ -586,7 +605,8 @@ footer {
     transition: width 0.1s ease;
 }
 
-/* 3D Layers */
+/* Camadas 3D */
+
 .hero-layers {
     position: absolute;
     top: 0;
@@ -623,6 +643,7 @@ footer {
 }
 
 /* Wave Canvas */
+
 #waveCanvas {
     position: absolute;
     bottom: 0;
@@ -633,7 +654,8 @@ footer {
     pointer-events: none;
 }
 
-/* Animated Background */
+/* Animação de Fundo */
+
 .animated-background {
     position: absolute;
     top: 0;
@@ -766,7 +788,8 @@ footer {
     }
 }
 
-/* Spotify Player Özelleştirme */
+/* Spotify Player Personalizado */
+
 .track iframe {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 30px rgba(136, 28, 52, 0.2);
@@ -777,7 +800,8 @@ footer {
     box-shadow: 0 20px 40px rgba(136, 28, 52, 0.4);
 }
 
-/* 3D Kart Efekti */
+/* Efeito de Carta 3D */
+
 .track {
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -795,7 +819,8 @@ footer {
     transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
 }
 
-/* Gelişmiş Arka Plan Animasyonları */
+/* Animações de Fundo Avançadas */
+
 .floating-element {
     background: conic-gradient(
         from 0deg at 50% 50%,
@@ -817,7 +842,8 @@ footer {
     50% { opacity: 0.2; }
 }
 
-/* Gelişmiş Dalga Animasyonu */
+/* Animação de Ondas Avançada */
+
 .wave-animation {
     background: repeating-linear-gradient(
         45deg,
@@ -832,7 +858,8 @@ footer {
     will-change: transform;
 }
 
-/* Hero Text Efekti */
+/* Efeito de Texto Hero */
+
 .artist-info h1 {
     background: linear-gradient(
         45deg,
@@ -850,7 +877,8 @@ footer {
     100% { background-position: 200% center; }
 }
 
-/* Gelişmiş Hover Efektleri */
+/* Efeitos Avançados de Sobreposição */
+
 .social-links a:hover {
     animation: wobble 0.8s ease-in-out;
 }
@@ -862,19 +890,21 @@ footer {
     75% { transform: translateY(-5px) rotate(5deg); }
 }
 
-/* Scroll Progress Bar Geliştirmesi */
+/* Melhorias na Barra de Progresso Scroll */
+
 .scroll-progress {
     background: var(--accent);
     animation: none;
 }
 
-/* Arka plan elementlerinin sayısını azaltalım */
+/* Redução do número de elementos de fundo */
 .animated-background .floating-element:nth-child(4),
 .animated-background .floating-element:nth-child(5) {
     display: none;
 }
 
-/* Gradient animasyonlarını basitleştirelim */
+/* Simplificação das animações de gradiente */
+
 .artist-info h1 {
     background: linear-gradient(
         45deg,
@@ -887,13 +917,15 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-/* Transform animasyonlarını GPU'ya yönlendirelim */
+/* Redirecionamento das animações de transformação para a GPU */
+
 .track, .social-links a, .latest-track {
     transform: translateZ(0);
     backface-visibility: hidden;
 }
 
-/* Mobil Menü */
+/* Menu da Versão Móvel */
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -934,7 +966,8 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* Track düzeltmeleri */
+    /* Correções de Faixa */
+    
     .track {
         padding: 1rem;
     }
@@ -948,7 +981,8 @@ footer {
         transform: none !important;
     }
 
-    /* Hero section düzeltmeleri */
+    /* Correções na Secção Hero */
+    
     .hero {
         padding-top: 120px;
     }
@@ -962,7 +996,8 @@ footer {
         max-width: none;
     }
 
-    /* Sosyal medya butonları */
+    /* Botões de Redes Sociais */
+    
     .social-links {
         flex-wrap: wrap;
         justify-content: center;
@@ -977,19 +1012,22 @@ footer {
         font-size: 1.3rem;
     }
 
-    /* Contact button */
+    /* Botão de Contacto */
+    
     .contact-btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
 
-    /* Section başlıkları */
+    /* Secções Principais */
+    
     .music h2, .about h2, .contact h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 
-    /* About text */
+    /* Texto bio */
+    
     .about-text p {
         font-size: 1rem;
         padding: 0 1rem;
