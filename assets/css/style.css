@@ -24,7 +24,7 @@
     --border: rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos Padrão */
+/* ESTILOS PADRÃO */
 
 * {
     margin: 0;
@@ -44,7 +44,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navegação */
+/* NAVEGAÇÃO 🧭 */
 
 nav {
     position: fixed;
@@ -92,7 +92,7 @@ nav {
     color: var(--accent);
 }
 
-/* Secção Hero */
+/* SECÇÃO HERO */
 
 .hero {
     min-height: 100vh;
@@ -197,7 +197,7 @@ nav {
     margin-bottom: 1rem;
 }
 
-/* Secção Musical */
+/* SECÇÃO MUSICAL 🎶 */
 
 .music {
     padding: 8rem 2rem;
@@ -279,7 +279,7 @@ nav {
     }
 }
 
-/* Secções de Bio & Contacto */
+/* SECÇÕES DE BIO & CONTACTO */
 
 .about, .contact {
     padding: 8rem 2rem;
@@ -381,7 +381,7 @@ nav {
     left: -25%;
 }
 
-/* 💻💻💻 Links das Redes Sociais do Fundo — PC 💻💻💻 */
+/* 💻💻💻 LINKS DAS REDES SOCIAIS DO FUNDO — PC 💻💻💻 */
 
 .social-links-bottom {
     display: flex;
@@ -456,7 +456,7 @@ nav {
     background: #ff5500;
 }
 
-/* Tooltip */
+/* TOOLTIP */
 
 .social-links a .tooltip {
     position: absolute;
@@ -481,7 +481,7 @@ nav {
     bottom: -35px;
 }
 
-/* Animação de Hover */
+/* ANIMAÇÃO DE HOVER */
 
 .social-links a:hover {
     animation: none;
@@ -505,7 +505,7 @@ nav {
     box-shadow: 0 10px 20px rgba(136, 28, 52, 0.3);
 }
 
-/* Footer // Rodapé */
+/* FOOTER // RODAPÉ */
 
 footer {
     padding: 2rem;
@@ -515,7 +515,7 @@ footer {
     color: var(--text-secondary);
 }
 
-/* Alteração de Tema */
+/* ALTERAÇÃO DE TEMA */
 
 .theme-toggle {
     background: none;
@@ -531,7 +531,7 @@ footer {
     transform: rotate(15deg);
 }
 
-/* 📳📳📳 Design Móvel — Resp. 📳📳📳 */
+/* 📳📳📳 DESIGN MÓVEL — RESP. 📳📳📳 */
 
 @media screen and (max-width: 1024px) {
     .hero-content {
@@ -592,7 +592,7 @@ footer {
     }
 }
 
-/* Barra de Progresso (Scroll) */
+/* BARRA DE PROGRESSO (SCROLL) */
 
 .scroll-progress {
     position: fixed;
@@ -605,7 +605,7 @@ footer {
     transition: width 0.1s ease;
 }
 
-/* Camadas 3D */
+/* CAMADAS 3D */
 
 .hero-layers {
     position: absolute;
@@ -642,7 +642,7 @@ footer {
     opacity: 0.1;
 }
 
-/* Wave Canvas */
+/* WAVE CANVAS */
 
 #waveCanvas {
     position: absolute;
@@ -654,7 +654,7 @@ footer {
     pointer-events: none;
 }
 
-/* Animação de Fundo */
+/* ANIMAÇÃO DE FUNDO */
 
 .animated-background {
     position: absolute;
@@ -788,7 +788,7 @@ footer {
     }
 }
 
-/* Spotify Player Personalizado */
+/* SPOTIFY PLAYER PERSONALIZADO */
 
 .track iframe {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -800,7 +800,7 @@ footer {
     box-shadow: 0 20px 40px rgba(136, 28, 52, 0.4);
 }
 
-/* Efeito de Carta 3D */
+/* EFEITO DE CARTA 3D */
 
 .track {
     perspective: 1000px;
@@ -819,7 +819,7 @@ footer {
     transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
 }
 
-/* Animações de Fundo Avançadas */
+/* ANIMAÇÕES DE FUNDO AVANÇADAS */
 
 .floating-element {
     background: conic-gradient(
@@ -842,7 +842,7 @@ footer {
     50% { opacity: 0.2; }
 }
 
-/* Animação de Ondas Avançada */
+/* ANIMAÇÃO DE ONDAS AVANÇADA */
 
 .wave-animation {
     background: repeating-linear-gradient(
@@ -858,7 +858,7 @@ footer {
     will-change: transform;
 }
 
-/* Efeito de Texto Hero */
+/* EFEITO DE TEXTO HERO */
 
 .artist-info h1 {
     background: linear-gradient(
@@ -877,7 +877,7 @@ footer {
     100% { background-position: 200% center; }
 }
 
-/* Efeitos Avançados de Sobreposição */
+/* EFEITOS AVANÇADOS DE SOBREPOSIÇÃO */
 
 .social-links a:hover {
     animation: wobble 0.8s ease-in-out;
@@ -890,20 +890,21 @@ footer {
     75% { transform: translateY(-5px) rotate(5deg); }
 }
 
-/* Melhorias na Barra de Progresso Scroll */
+/* MELHORIAS NA BARRA DE PROGRESSO SCROLL */
 
 .scroll-progress {
     background: var(--accent);
     animation: none;
 }
 
-/* Redução do número de elementos de fundo */
+/* REDUÇÃO DO NÚMERO DE ELEMENTOS DE FUNDO */
+
 .animated-background .floating-element:nth-child(4),
 .animated-background .floating-element:nth-child(5) {
     display: none;
 }
 
-/* Simplificação das animações de gradiente */
+/* SIMPLIFICAÇÃO DAS ANIMAÇÕES DE GRADIENTE */
 
 .artist-info h1 {
     background: linear-gradient(
@@ -917,14 +918,14 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-/* Redirecionamento das animações de transformação para a GPU */
+/* REDIRECIONAMENTO DAS ANIMAÇÕES DE TRANSFORMAÇÃO PARA A GPU */
 
 .track, .social-links a, .latest-track {
     transform: translateZ(0);
     backface-visibility: hidden;
 }
 
-/* Menu da Versão Móvel */
+/* MENU DA VERSÃO MÓVEL */
 
 .mobile-menu-btn {
     display: none;
@@ -966,7 +967,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* Correções de Faixa */
+    /* CORREÇÕES DE FAIXA */
     
     .track {
         padding: 1rem;
@@ -981,7 +982,7 @@ footer {
         transform: none !important;
     }
 
-    /* Correções na Secção Hero */
+    /* CORREÇÕES NA SECÇÃO HERO */
     
     .hero {
         padding-top: 120px;
@@ -996,7 +997,7 @@ footer {
         max-width: none;
     }
 
-    /* Botões de Redes Sociais */
+    /* BOTÕES DE REDES SOCIAIS */
     
     .social-links {
         flex-wrap: wrap;
@@ -1012,21 +1013,21 @@ footer {
         font-size: 1.3rem;
     }
 
-    /* Botão de Contacto */
+    /* BOTÃO DE CONTACTO */
     
     .contact-btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
 
-    /* Secções Principais */
+    /* SECÇÕES PRINCIPAIS */
     
     .music h2, .about h2, .contact h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 
-    /* Texto bio */
+    /* TEXTO BIO */
     
     .about-text p {
         font-size: 1rem;
