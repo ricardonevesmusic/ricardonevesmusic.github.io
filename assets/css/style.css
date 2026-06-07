@@ -2,7 +2,11 @@
 
 /* ------------------------- */
 
-/* VARIÁVEIS DO TEMA NO PC */
+/* 
+=======================
+VARIÁVEIS DO TEMA NO PC 
+======================= 
+*/
 
 :root {
     --bg-primary: #0a0a0a;
@@ -24,7 +28,11 @@
     --border: rgba(0, 0, 0, 0.1);
 }
 
-/* ESTILOS PADRÃO */
+/* 
+==============
+ESTILOS PADRÃO
+============== 
+*/
 
 * {
     margin: 0;
@@ -44,7 +52,11 @@ body {
     overflow-x: hidden;
 }
 
-/* NAVEGAÇÃO 🧭 */
+/* 
+=============
+NAVEGAÇÃO 🧭
+============= 
+*/
 
 nav {
     position: fixed;
@@ -92,7 +104,11 @@ nav {
     color: var(--accent);
 }
 
-/* SECÇÃO HERO */
+/* 
+===========
+SECÇÃO HERO
+=========== 
+*/
 
 .hero {
     min-height: 100vh;
@@ -197,7 +213,11 @@ nav {
     margin-bottom: 1rem;
 }
 
-/* SECÇÃO MUSICAL 🎶 */
+/* 
+==================
+SECÇÃO MUSICAL 🎶
+================== 
+*/
 
 .music {
     padding: 8rem 2rem;
@@ -279,7 +299,11 @@ nav {
     }
 }
 
-/* SECÇÕES DE BIO & CONTACTO */
+/* 
+=========================
+SECÇÕES DE BIO & CONTACTO
+========================= 
+*/
 
 .about, .contact {
     padding: 8rem 2rem;
@@ -322,6 +346,12 @@ nav {
     color: var(--text-secondary);
     line-height: 1.8;
 }
+
+/* 
+=============================================
+💻💻💻 LINKS DAS REDES SOCIAIS — PC 💻💻💻
+============================================= 
+*/
 
 .social-links {
     display: flex;
@@ -381,7 +411,11 @@ nav {
     left: -25%;
 }
 
-/* 💻💻💻 LINKS DAS REDES SOCIAIS DO FUNDO — PC 💻💻💻 */
+/* 
+======================================================
+💻💻💻 LINKS DAS REDES SOCIAIS DO FUNDO — PC 💻💻💻
+====================================================== 
+*/
 
 .social-links-bottom {
     display: flex;
@@ -442,7 +476,11 @@ nav {
     left: -25%;
 }
 
-/* ESTILOS ESPECÍFICOS POR PLATAFORMA */
+/* 
+==================================
+ESTILOS ESPECÍFICOS POR PLATAFORMA
+================================== 
+*/
 
 .spotify-link::before {
     background: #1DB954;
@@ -456,7 +494,11 @@ nav {
     background: #ff5500;
 }
 
-/* TOOLTIP */
+/* 
+=======
+TOOLTIP
+=======
+*/
 
 .social-links a .tooltip {
     position: absolute;
@@ -481,7 +523,11 @@ nav {
     bottom: -35px;
 }
 
-/* ANIMAÇÃO DE HOVER */
+/* 
+=================
+ANIMAÇÃO DE HOVER
+================= 
+*/
 
 .social-links a:hover {
     animation: none;
@@ -505,7 +551,11 @@ nav {
     box-shadow: 0 10px 20px rgba(136, 28, 52, 0.3);
 }
 
-/* FOOTER // RODAPÉ */
+/* 
+================
+FOOTER // RODAPÉ
+================ 
+*/
 
 footer {
     padding: 2rem;
@@ -515,7 +565,11 @@ footer {
     color: var(--text-secondary);
 }
 
-/* ALTERAÇÃO DE TEMA */
+/* 
+=================
+ALTERAÇÃO DE TEMA
+================= 
+*/
 
 .theme-toggle {
     background: none;
@@ -531,7 +585,11 @@ footer {
     transform: rotate(15deg);
 }
 
-/* 📳📳📳 DESIGN MÓVEL — RESP. 📳📳📳 */
+/* 
+=====================================
+📳📳📳 DESIGN MÓVEL — RESP. 📳📳📳
+===================================== 
+*/
 
 @media screen and (max-width: 1024px) {
     .hero-content {
@@ -592,7 +650,11 @@ footer {
     }
 }
 
-/* BARRA DE PROGRESSO (SCROLL) */
+/* 
+===========================
+BARRA DE PROGRESSO (SCROLL)
+=========================== 
+*/
 
 .scroll-progress {
     position: fixed;
@@ -605,7 +667,11 @@ footer {
     transition: width 0.1s ease;
 }
 
-/* CAMADAS 3D */
+/* 
+==========
+CAMADAS 3D
+========== 
+*/
 
 .hero-layers {
     position: absolute;
@@ -642,7 +708,11 @@ footer {
     opacity: 0.1;
 }
 
-/* WAVE CANVAS */
+/* 
+===========
+WAVE CANVAS
+=========== 
+*/
 
 #waveCanvas {
     position: absolute;
@@ -654,7 +724,11 @@ footer {
     pointer-events: none;
 }
 
-/* ANIMAÇÃO DE FUNDO */
+/* 
+=================
+ANIMAÇÃO DE FUNDO
+================= 
+*/
 
 .animated-background {
     position: absolute;
@@ -788,7 +862,11 @@ footer {
     }
 }
 
-/* SPOTIFY PLAYER PERSONALIZADO */
+/* 
+============================
+SPOTIFY PLAYER PERSONALIZADO
+============================ 
+*/
 
 .track iframe {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -800,7 +878,11 @@ footer {
     box-shadow: 0 20px 40px rgba(136, 28, 52, 0.4);
 }
 
-/* EFEITO DE CARTA 3D */
+/* 
+==================
+EFEITO DE CARTA 3D
+================== 
+*/
 
 .track {
     perspective: 1000px;
@@ -819,7 +901,11 @@ footer {
     transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
 }
 
-/* ANIMAÇÕES DE FUNDO AVANÇADAS */
+/* 
+============================
+ANIMAÇÕES DE FUNDO AVANÇADAS
+============================ 
+*/
 
 .floating-element {
     background: conic-gradient(
@@ -842,7 +928,11 @@ footer {
     50% { opacity: 0.2; }
 }
 
-/* ANIMAÇÃO DE ONDAS AVANÇADA */
+/* 
+==========================
+ANIMAÇÃO DE ONDAS AVANÇADA
+========================== 
+*/
 
 .wave-animation {
     background: repeating-linear-gradient(
@@ -858,7 +948,11 @@ footer {
     will-change: transform;
 }
 
-/* EFEITO DE TEXTO HERO */
+/* 
+====================
+EFEITO DE TEXTO HERO
+==================== 
+*/
 
 .artist-info h1 {
     background: linear-gradient(
@@ -877,7 +971,11 @@ footer {
     100% { background-position: 200% center; }
 }
 
-/* EFEITOS AVANÇADOS DE SOBREPOSIÇÃO */
+/* 
+=================================
+EFEITOS AVANÇADOS DE SOBREPOSIÇÃO
+================================= 
+*/
 
 .social-links a:hover {
     animation: wobble 0.8s ease-in-out;
@@ -890,21 +988,33 @@ footer {
     75% { transform: translateY(-5px) rotate(5deg); }
 }
 
-/* MELHORIAS NA BARRA DE PROGRESSO SCROLL */
+/* 
+======================================
+MELHORIAS NA BARRA DE PROGRESSO SCROLL
+====================================== 
+*/
 
 .scroll-progress {
     background: var(--accent);
     animation: none;
 }
 
-/* REDUÇÃO DO NÚMERO DE ELEMENTOS DE FUNDO */
+/* 
+=======================================
+REDUÇÃO DO NÚMERO DE ELEMENTOS DE FUNDO
+======================================= 
+*/
 
 .animated-background .floating-element:nth-child(4),
 .animated-background .floating-element:nth-child(5) {
     display: none;
 }
 
-/* SIMPLIFICAÇÃO DAS ANIMAÇÕES DE GRADIENTE */
+/* 
+========================================
+SIMPLIFICAÇÃO DAS ANIMAÇÕES DE GRADIENTE
+======================================== 
+*/
 
 .artist-info h1 {
     background: linear-gradient(
@@ -918,14 +1028,22 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-/* REDIRECIONAMENTO DAS ANIMAÇÕES DE TRANSFORMAÇÃO PARA A GPU */
+/* 
+==========================================================
+REDIRECIONAMENTO DAS ANIMAÇÕES DE TRANSFORMAÇÃO PARA A GPU
+========================================================== 
+*/
 
 .track, .social-links a, .latest-track {
     transform: translateZ(0);
     backface-visibility: hidden;
 }
 
-/* MENU DA VERSÃO MÓVEL */
+/* 
+====================
+MENU DA VERSÃO MÓVEL
+==================== 
+*/
 
 .mobile-menu-btn {
     display: none;
@@ -967,7 +1085,11 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* CORREÇÕES DE FAIXA */
+    /* 
+    ==================
+    CORREÇÕES DE FAIXA
+    ================== 
+    */
     
     .track {
         padding: 1rem;
@@ -982,7 +1104,11 @@ footer {
         transform: none !important;
     }
 
-    /* CORREÇÕES NA SECÇÃO HERO */
+    /* 
+    ========================
+    CORREÇÕES NA SECÇÃO HERO
+    ======================== 
+    */
     
     .hero {
         padding-top: 120px;
@@ -997,7 +1123,11 @@ footer {
         max-width: none;
     }
 
-    /* BOTÕES DE REDES SOCIAIS */
+    /* 
+    =======================
+    BOTÕES DE REDES SOCIAIS 
+    ======================= 
+    */
     
     .social-links {
         flex-wrap: wrap;
@@ -1013,21 +1143,33 @@ footer {
         font-size: 1.3rem;
     }
 
-    /* BOTÃO DE CONTACTO */
+    /* 
+    =================
+    BOTÃO DE CONTACTO
+    ================= 
+    */
     
     .contact-btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
 
-    /* SECÇÕES PRINCIPAIS */
+    /* 
+    ==================
+    SECÇÕES PRINCIPAIS 
+    ================== 
+    */
     
     .music h2, .about h2, .contact h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 
-    /* TEXTO BIO */
+    /* 
+    =========
+    TEXTO BIO
+    ========= 
+    */
     
     .about-text p {
         font-size: 1rem;
