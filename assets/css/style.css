@@ -371,6 +371,65 @@ nav {
     left: -25%;
 }
 
+.social-links-bottom {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.social-links-bottom a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.social-links-bottom a i {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.social-links-bottom a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.social-links-bottom a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+
+.social-links-bottom a:hover i {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.social-links-bottom a:hover::before {
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+}
+
 /* Platform-specific styles */
 .spotify-link::before {
     background: #1DB954;
