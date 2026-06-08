@@ -400,3 +400,105 @@ LATEST TRACK
     font-weight: 600;
     margin-bottom: 1rem;
 }
+
+/* 
+/////////////
+SOCIAL LINKS
+//////////// 
+*/
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.social-links a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.social-links a i {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+
+.social-links a:hover i {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.social-links a:hover::before {
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+}
+
+.social-links a .tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    padding: 6px 12px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.social-links a:hover .tooltip {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    bottom: -35px;
+}
+
+.social-links a:hover {
+    animation: none;
+}
+
+.social-links a:hover {
+    animation: wobble 0.8s ease-in-out;
+}
+
+@keyframes wobble {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    25% { transform: translateY(-5px) rotate(-5deg); }
+    50% { transform: translateY(-7px) rotate(0); }
+    75% { transform: translateY(-5px) rotate(5deg); }
+}
