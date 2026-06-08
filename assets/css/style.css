@@ -421,11 +421,10 @@ SECÇÕES DE BIO & CONTACTO
     display: flex;
     gap: 2rem;
     margin: 2rem 0;
-    justify-content: center;
 }
 
 .social-links-bottom a {
-    position: relative;
+    position: center;
     width: 60px;
     height: 60px;
     display: flex;
@@ -474,6 +473,44 @@ SECÇÕES DE BIO & CONTACTO
     height: 150%;
     top: -25%;
     left: -25%;
+}
+
+.social-links-bottom a .tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    padding: 6px 12px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.social-links-bottom a:hover .tooltip {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    bottom: -35px;
+}
+
+.social-links-bottom a:hover {
+    animation: none;
+}
+
+.social-links-bottom a:hover {
+    animation: wobble 0.8s ease-in-out;
+}
+
+@keyframes wobble {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    25% { transform: translateY(-5px) rotate(-5deg); }
+    50% { transform: translateY(-7px) rotate(0); }
+    75% { transform: translateY(-5px) rotate(5deg); }
 }
 
 /* 
