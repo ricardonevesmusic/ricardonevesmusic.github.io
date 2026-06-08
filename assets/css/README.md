@@ -3,95 +3,95 @@
 ## CSS
 
 ////
-NAV
+~~NAV~~
 ///
 
-nav-content
+~~nav-content~~
 
-logo
+~~logo~~
 
-nav-links
+~~nav-links~~
 
-theme-toggle
+~~theme-toggle~~
 
 fas fa-moon
 
 ////////////
-SCROLL PROG 
+~~SCROLL PROG~~
 ///////////
 
-scroll-progress
+~~scroll-progress~~
 
 /////
-HERO
+~~HERO~~
 ////
 
-hero
+~~hero~~
 
-animated-background
+~~animated-background~~
 
-floating-element
+~~floating-element~~
 
-floating-note
+~~floating-note~~
 
-wave-animation
+~~wave-animation~~
 
-hero-content
+~~hero-content~~
 
-hero-left
+~~hero-left~~
 
-hero-right
+~~hero-right~~
 
-hero-layers
+~~hero-layers~~
 
-layer
+~~layer~~
 
-waveCanvas
+~~waveCanvas~~
 
 ////////////
-ARTIST INFO
+~~ARTIST INFO~~
 ///////////
 
-artist-info
+~~artist-info~~
 
 /////////////
-LATEST TRACK
+~~LATEST TRACK~~
 ////////////
 
 
 
 /* 
-⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-→ CHECK HERO-RIGHT ← 
-⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️ 
+~~⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️~~
+~~→ CHECK HERO-RIGHT ←~~
+~~⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️~~ 
 *\
 
-latest-track
-tag
+~~latest-track~~
+~~tag~~
 
 /////////////
-SOCIAL LINKS
+~~SOCIAL LINKS~~
 ////////////
 
-social-links
+~~social-links~~
 
-social-links-bottom
+~~social-links-bottom~~
 
-tooltip
+~~tooltip~~
 
 fab fa-spotify
 fab fa-instagram
 fab fa-soundcloud
 
 //////
-MUSIC
+~~MUSIC~~
 /////
 
-music
+~~music
 music-container
 track-list
 track
-track-inner
+track-inner~~
 
 ////////////
 ABOUT • BIO
