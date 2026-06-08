@@ -94,19 +94,19 @@ track
 track-inner~~
 
 ////////////
-ABOUT • BIO
+~~ABOUT • BIO~~
 ///////////
 
-about
-about-content
-about-text
+~~about
+~~about-content~~
+~~about-text~~
 
 ////////
-CONTACT
+~~CONTACT~~
 ///////
 
-contact
-contact-content
+~~contact
+contact-content~~
 fas fa-envelope
 
 ---
