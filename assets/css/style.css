@@ -418,6 +418,8 @@ SECÇÕES DE BIO & CONTACTO
 */
 
 .social-links-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
     display: flex;
     gap: 2rem;
     margin: 2rem 0;
@@ -683,6 +685,19 @@ ALTERAÇÃO DE TEMA
     }
     
     .social-links a i {
+        font-size: 1.5rem;
+    }
+
+    .social-links-bottom {
+        gap: 1rem;
+    }
+    
+    .social-links-bottom a {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-links-bottom a i {
         font-size: 1.5rem;
     }
 }
@@ -1071,7 +1086,7 @@ REDIRECIONAMENTO DAS ANIMAÇÕES DE TRANSFORMAÇÃO PARA A GPU
 ========================================================== 
 */
 
-.track, .social-links a, .latest-track {
+.track, .social-links a, .social-links-bottom a, .latest-track {
     transform: translateZ(0);
     backface-visibility: hidden;
 }
@@ -1179,7 +1194,21 @@ MENU DA VERSÃO MÓVEL
     .social-links a i {
         font-size: 1.3rem;
     }
+    
+    .social-links-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+     .social-links-bottom a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-links-bottom a i {
+        font-size: 1.3rem;
+    }
+    
     /* 
     =================
     BOTÃO DE CONTACTO
