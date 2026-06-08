@@ -622,3 +622,117 @@ ABOUT • BIO
 /////////// 
 */
 
+.about {
+    padding: 8rem 2rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.about {
+    background: var(--bg-primary);
+}
+
+.about h2 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    letter-spacing: 4px;
+    background: linear-gradient(45deg, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px var(--accent-light);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* 
+////////////
+→ CONTACT ←
+/////////// 
+*/
+
+.contact {
+    padding: 8rem 2rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.contact {
+    background: var(--bg-secondary);
+}
+
+.contact h2 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    letter-spacing: 4px;
+    background: linear-gradient(45deg, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px var(--accent-light);
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(136, 28, 52, 0.3);
+}
+
+/* 
+///////////////////////////////////////////////////////////
+REDIRECIONAMENTO DAS ANIMAÇÕES DE TRANSFORMAÇÃO PARA A GPU
+////////////////////////////////////////////////////////// 
+*/
+
+.track {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.social-links a {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.latest-track {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
