@@ -2,7 +2,9 @@
 
 ## CSS
 
-nav
+////
+NAV
+///
 
 nav-content
 
@@ -14,7 +16,15 @@ theme-toggle
 
 fas fa-moon
 
+////////////
+SCROLL PROG 
+///////////
+
 scroll-progress
+
+/////
+HERO
+////
 
 hero
 
@@ -30,20 +40,52 @@ hero-content
 
 hero-left
 
-artist-info
-social-links
-tooltip
-fab fa-spotify
-fab fa-instagram
-fab fa-soundcloud
-social-links-bottom
 hero-right
+
+hero-layers
+
+layer
+
+waveCanvas
+
+////////////
+ARTIST INFO
+///////////
+
+artist-info
+
+/////////////
+LATEST TRACK
+////////////
+
+
+
+/* 
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+→ CHECK HERO-RIGHT ← 
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️ 
+*\
+
 latest-track
 tag
 
-hero-layers
-layer
-waveCanvas
+/////////////
+SOCIAL LINKS
+////////////
+
+social-links
+
+social-links-bottom
+
+tooltip
+
+fab fa-spotify
+fab fa-instagram
+fab fa-soundcloud
+
+//////
+MUSIC
+/////
 
 music
 music-container
@@ -51,10 +93,28 @@ track-list
 track
 track-inner
 
+////////////
+ABOUT • BIO
+///////////
+
 about
 about-content
 about-text
 
+////////
+CONTACT
+///////
+
 contact
 contact-content
 fas fa-envelope
+
+---
+
+///////
+MOBILE
+//////
+
+mobile-menu-btn
+
+fas fa-bars
