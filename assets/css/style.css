@@ -530,7 +530,7 @@ ESTILOS ESPECÍFICOS POR PLATAFORMA
 }
 
 .youtube-link::before {
-    background: #FF0033;
+    background: red;
 }
 
 /* 
