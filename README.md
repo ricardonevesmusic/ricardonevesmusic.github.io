@@ -34,6 +34,7 @@
     <a class="favoritos" href="https://www.instagram.com/saracorreiafado" target="_blank" rel="noreferrer">
         <img src="https://ricardonevesmusic.github.io/assets/content/fa/Sara_Correia.jpg" title="Sara Correia" alt="Sara Correia" width="150" height="150" />
     </a>
+    <br><td>
     <a class="favoritos" href="https://www.instagram.com/jorgepalmaoficial" target="_blank" rel="noreferrer">
         <img src="https://ricardonevesmusic.github.io/assets/content/fa/Jorge_Palma.jpg" title="Jorge Palma" alt="Jorge Palma" width="150" height="150" />
     </a>
