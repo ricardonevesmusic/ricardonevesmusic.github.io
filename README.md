@@ -28,7 +28,10 @@
     <a class="favoritos" href="https://www.instagram.com/ritacostamedeirosmusic" target="_blank" rel="noreferrer">
         <img src="https://ricardonevesmusic.github.io/assets/content/fa/Rita_Costa_Medeiros.jpg" title="Rita Costa Medeiros" alt="Rita Costa Medeiros" width="150" height="150" />
     </a>
-  <a class="favoritos" href="https://www.instagram.com/milhanas_" target="_blank" rel="noreferrer">
+    <a class="favoritos" href="https://www.instagram.com/milhanas_" target="_blank" rel="noreferrer">
         <img src="https://ricardonevesmusic.github.io/assets/content/fa/Milhanas.jpg" title="Milhanas" alt="Milhanas" width="150" height="150" />
+    </a>
+    <a class="favoritos" href="https://www.instagram.com/saracorreiafado" target="_blank" rel="noreferrer">
+        <img src="https://ricardonevesmusic.github.io/assets/content/fa/Sara_Correia.jpg" title="Sara Correia" alt="Sara Correia" width="150" height="150" />
     </a>
 </p>
