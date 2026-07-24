@@ -10,7 +10,7 @@
 
 <br><td>
 
-# <img src="https://github.com/ricardonevesmusic/ricardonevesmusic.github.io/blob/8d88f2f85a9b61c2a8269a05214d3c5d1a6d32a5/assets/content/foto.jpg" alt="" width="864px" height="1152px">
+# <img src="https://github.com/ricardonevesmusic/ricardonevesmusic.github.io/blob/8d88f2f85a9b61c2a8269a05214d3c5d1a6d32a5/assets/content/foto.jpg" alt="" width="576px" height="768px">
 
 <br><td>
 
