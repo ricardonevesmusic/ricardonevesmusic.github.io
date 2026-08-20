@@ -1,1 +1,371 @@
-<h1 id="hello-world">Hello World!</h1>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Neves — Canções com Alma</title>
+  <style>
+    :root {
+      --bg-color: #f7f4ee;
+      --card-bg: #ffffff;
+      --text-main: #2b2825;
+      --text-muted: #666059;
+      --accent-color: #ad532b; /* Terracota caloroso */
+      --accent-hover: #883e1e;
+      --border-color: #e4dec8;
+      --font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    /* Cabeçalho */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(247, 244, 238, 0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 1.5rem;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Layout Principal */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 0 4rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-img {
+      width: 200px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .tagline {
+      font-size: 1.25rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero blockquote {
+      font-style: italic;
+      color: var(--text-muted);
+      max-width: 600px;
+      font-size: 1.05rem;
+      border-left: 3px solid var(--accent-color);
+      padding-left: 1rem;
+      text-align: left;
+    }
+
+    /* Secções Gerais */
+    section {
+      padding: 3.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      color: var(--text-main);
+    }
+
+    /* Serviços */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.1rem;
+    }
+
+    /* Blog */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .blog-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .read-more {
+      color: var(--accent-color);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* Artistas Favoritos */
+    .artists-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+    }
+
+    .artist-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .artist-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border-color);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .artist-item:hover .artist-img {
+      transform: scale(1.05);
+      border-color: var(--accent-color);
+    }
+
+    .artist-name {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.9rem; }
+      .nav-links { gap: 1rem; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="brand">RICARDO NEVES</div>
+      <ul class="nav-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#blog">Artigos</a></li>
+        <li><a href="#favoritos">Inspirações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero / Apresentação -->
+    <section class="hero">
+      <img 
+        src="https://ricardonevesmusic.github.io/assets/content/foto.jpg" 
+        alt="Ricardo Neves" 
+        class="hero-img"
+        onerror="this.src='https://via.placeholder.com/200x260?text=Ricardo+Neves'"
+      >
+      <h1>Ricardo Neves</h1>
+      <p class="tagline">Canções com Alma</p>
+      <blockquote>
+        "Canções, emoções e ligações humanas.<br>
+        Toca quem tem que tocar — sem pedir licença para entrar: é um grito que não pode esperar."
+      </blockquote>
+    </section>
+
+    <!-- Serviços & Colaboração -->
+    <section id="servicos">
+      <h2 class="section-title">🎤 Serviços & Colaboração</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎙️</div>
+          <h3>Voz / Canto</h3>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎸</div>
+          <h3>Guitarra</h3>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✍️</div>
+          <h3>Composição</h3>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎹</div>
+          <h3>Projetos Criativos</h3>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Colaborações Artísticas</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / Notas & Reflexões -->
+    <section id="blog">
+      <h2 class="section-title">📝 Diário Musical & Atualizações</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <span class="blog-date">20 de Agosto, 2026</span>
+          <h3>A Busca pela Simplicidade na Composição Acústica</h3>
+          <p>Como a harmonia entre a guitarra de cordas de nylon/aço e a palavra crua cria um espaço de honestidade imediata com quem ouve.</p>
+          <a href="#" class="read-more">Ler artigo &rarr;</a>
+        </article>
+
+        <article class="blog-card">
+          <span class="blog-date">02 de Agosto, 2026</span>
+          <h3>Processo Criativo: Da Ideia à Letra</h3>
+          <p>Algumas notas sobre como transformar vivências e emoções diárias em arranjos e poemas cantados.</p>
+          <a href="#" class="read-more">Ler artigo &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Artistas Favoritos -->
+    <section id="favoritos" style="border-bottom: none;">
+      <h2 class="section-title">⭐ Artistas Favoritos & Influências</h2>
+      <div class="artists-grid">
+        <a href="https://www.instagram.com/ritacostamedeirosmusic" target="_blank" class="artist-item">
+          <img src="https://ricardonevesmusic.github.io/assets/content/fa/Rita_Costa_Medeiros.jpg" alt="Rita Costa Medeiros" class="artist-img">
+          <span class="artist-name">Rita C. Medeiros</span>
+        </a>
+        <a href="https://www.instagram.com/milhanas_" target="_blank" class="artist-item">
+          <img src="https://ricardonevesmusic.github.io/assets/content/fa/Milhanas.jpg" alt="Milhanas" class="artist-img">
+          <span class="artist-name">Milhanas</span>
+        </a>
+        <a href="https://www.instagram.com/saracorreiafado" target="_blank" class="artist-item">
+          <img src="https://ricardonevesmusic.github.io/assets/content/fa/Sara_Correia.jpg" alt="Sara Correia" class="artist-img">
+          <span class="artist-name">Sara Correia</span>
+        </a>
+        <a href="https://www.instagram.com/jorgepalmaoficial" target="_blank" class="artist-item">
+          <img src="https://ricardonevesmusic.github.io/assets/content/fa/Jorge_Palma.jpg" alt="Jorge Palma" class="artist-img">
+          <span class="artist-name">Jorge Palma</span>
+        </a>
+        <a href="https://www.instagram.com/sergio.godinho.oficial" target="_blank" class="artist-item">
+          <img src="https://ricardonevesmusic.github.io/assets/content/fa/Sergio_Godinho.jpg" alt="Sérgio Godinho" class="artist-img">
+          <span class="artist-name">Sérgio Godinho</span>
+        </a>
+        <a href="https://www.instagram.com/ruivelosoficial" target="_blank" class="artist-item">
+          <img src="https://ricardonevesmusic.github.io/assets/content/fa/Rui_Veloso.jpg" alt="Rui Veloso" class="artist-img">
+          <span class="artist-name">Rui Veloso</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ricardo Neves — Canções com Alma.</p>
+  </footer>
+
+</body>
+</html>
