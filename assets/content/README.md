@@ -2,10 +2,8 @@
 
 ## Prioridades
 
-~~- Organizar/estruturar conteúdos no ficheiro CSS~~
-
 ### Sem urgência
 
-- Add a blog section for posts
+- Add a sticky left-sided pop-up button/menu: to display links to different/optional "hidden" pages that might not be as relevant as the music itself (blog pages/content, etc).
 
-~~- Corrigir "social-links" e adicionar "social-links-bottom"~~
+- Add a blog section for posts
